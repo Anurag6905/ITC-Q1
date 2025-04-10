@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+body {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+}
+
+.Web {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/*Navbar*/
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    position: sticky;
+    margin-top: 2rem;
+    width: 90%;
+    height: 4rem;
+    padding: 1rem;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10%;
+    background-color: white;
+}
+
+.navbar a {
+    font-size: 1.2rem;
+    color: black;
+    padding:10px 10px;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 50px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.navbar a:hover {
+    color:#121212;
+    background-color: rgb(196, 194, 194);
+}
+
+.Home {
+    width: 100%;
+    height: auto;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+    background: cover;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Home h1 {
+    font-size: 2rem;
+    color: aliceblue;
+    margin-top: 2rem;
+    width: 100%;
+    height: auto;
+    font-size: 5rem;
+}
+
+.Home p {
+    margin-top: 1rem;
+    color: aliceblue;
+}
+
+@media (max-width:850px) {
+    .navbar a{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .navbar a{
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:530px) {
+    .navbar a{
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width:480px) {
+    .navbar a{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:450px) {
+    .navbar a{
+        font-size: 0.6rem;
+    }
+
+    .navbar {
+        height: 2.5rem;
+        padding: 0.4rem;
+    }
+}
+
+@media (max-width:410px) {
+    .navbar {
+        height: 2.5rem;
+        padding: 0.4rem;
+    }
+
+    .navbar a{
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:700px) {
+    .navbar-image{
+        display: none;
+    }
+}
+
+/*Hero Secton*/
+
+.hero-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+    color: white;
+    overflow: hidden;
+}
+  
+.hero-content {
+    max-width: 600px;
+}
+  
+.hero-title {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease;
+}
+  
+.hero-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease;
+}
+  
+.hero-button {
+    background-color: white;
+    color: black;
+    padding: 12px 24px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    animation: fadeIn 1.5s ease;
+}
+  
+.hero-button:hover {
+    background-color: #ddd;
+}
+  
+.hero-image {
+    max-width: 400px;
+    width: 700px;
+    height: auto;
+}
+  
+.hero-image img {
+    width: 100%;
+    animation: fadeIn 1.5s ease;
+}
+
+@media (min-width: 770px) {
+    .hero-section {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 120px 80px;
+    }
+
+    .hero-title {
+        font-size: 3.6rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}  
+
+@media (max-width: 500px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.7rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 80px;
+      }
+}
+
+@media (max-width: 300px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-description {
+        font-size: 0.6rem;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        justify-content: center;
+        padding: 60px 80px;
+      }
+}
+  
+/*fade-in animation */
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
