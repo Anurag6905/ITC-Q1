@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+}
+
+.contact-section {
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeIn 1.5s ease;
+}
+  
+.contact-box {
+    max-width: 600px;
+    margin: 0 auto;
+}
+  
+.contact-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+  
+.contact-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: white;
+}
+  
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+  
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+  
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #0965c7;
+    outline: none;
+    color: aliceblue;
+}
+  
+.contact-form button {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #0d68ca;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  

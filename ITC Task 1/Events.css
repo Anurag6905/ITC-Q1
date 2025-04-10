@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+  
+.events-section {
+    padding: 80px 20px;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png'), #121212;
+    color: white;
+}
+  
+.events-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: fadeIn 1.5s ease;
+}
+    
+.section-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+    color: aliceblue;
+}
+  
+.event-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(234, 233, 233, 0.1);
+    transition: transform 0.3s ease;
+}
+  
+.event-card:hover {
+    transform: translateY(-5px);
+}
+  
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+  
+.event-content {
+    padding: 20px;
+}
+  
+.event-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+  
+.event-date {
+    font-size: 1rem;
+    color: #b82e2e;
+    margin-bottom: 15px;
+}
+  
+.event-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+  
+.event-link {
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: 600;
+}
+  
+.event-link:hover {
+    text-decoration: underline;
+}
+  
+@media (min-width: 768px) {
+    .event-card {
+      flex-direction: row;
+    }
+  
+    .event-image {
+      width: 40%;
+      height: auto;
+    }
+  
+    .event-content {
+      width: 60%;
+      padding: 40px;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
